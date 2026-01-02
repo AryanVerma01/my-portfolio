@@ -13,7 +13,6 @@ const Navbar = () => {
         </div>
         <div className='hidden lg:flex lg:justify-center lg:gap-6 text-sm'>
             <Link href="/" className="hover:text-neutral-300 hover:scale-108 font-semibold transition-colors">Projects</Link>
-            <Link href="/" className="hover:text-neutral-300 hover:scale-108 font-semibold transition-colors">Skills</Link>
             <Link href="/" className="hover:text-neutral-300 hover:scale-108 font-semibold transition-colors">Designs</Link>
             <Link href="/" className="hover:text-neutral-300 hover:scale-108 font-semibold transition-colors">Contact</Link>
         </div>

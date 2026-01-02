@@ -1,11 +1,11 @@
 import React from 'react'
 import { twMerge } from "tailwind-merge"
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 const Techblocks = ({ children, className, src }: {
   children: React.ReactNode,
   className?: string,
-  src: string
+  src: string | StaticImageData
 }) => {
   return (
     <span
@@ -14,7 +14,13 @@ const Techblocks = ({ children, className, src }: {
         className
       )}
     >
-      <Image src={src} className='w-4 h-4' alt='' />
+      <Image 
+        src={src} 
+        className='w-4 h-4' 
+        alt='' 
+        width={4} 
+        height={4}
+      />
       <span className='font-semibold'>{children}</span>
     </span>
   )

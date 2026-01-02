@@ -1,31 +1,15 @@
-import React from "react";
-import {
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import bitcoin from "../public/bitcoin.svg";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "./ui/button";
-import link from "../public/link.svg";
-import Github from "../public/brand-github.svg";
-import {
-  Tooltip,
-  TooltipTrigger,
-  TooltipContent,
-  TooltipProvider,
-} from "@radix-ui/react-tooltip";
-import Techblocks from "./Techblocks";
-import nextJS from "../public/nextJS.svg";
-import LiveDot from "./LiveDot";
+import LiveDot from '@/components/LiveDot'
+import Techblocks from '@/components/Techblocks'
+import { Card, CardContent } from '@/components/ui/card'
+import { TooltipProvider, Tooltip, TooltipTrigger, TooltipContent } from '@radix-ui/react-tooltip'
+import nextJS from '../../public/nextJS.svg'
+import Link from "next/link"
 
-const Cards = () => {
+const page = () => {
   return (
+    <div className="w-full h-screen px-7 md:px-16 lg:px-76 2xl:px-102 selection:bg-white selection:text-black">
+    <div className='w-full h-full py-10'>
+      <div className='text-2xl font-bold pb-8'> All Projects </div>
     <TooltipProvider>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
         <Card className="h-130 p-0 overflow-hidden flex flex-col hover:-translate-y-2 delay-100 transition-all">
@@ -337,8 +321,10 @@ const Cards = () => {
           </CardContent>
         </Card>
       </div>
-    </TooltipProvider>
-  );
-};
+    </TooltipProvider>        
+    </div>
+    </div>
+  )
+}
 
-export default Cards;
+export default page
