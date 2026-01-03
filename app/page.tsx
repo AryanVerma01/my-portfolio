@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="w-full h-screen px-7 md:px-16 lg:px-76 2xl:px-102 selection:bg-white selection:text-black">
-        <div className='w-full h-full'>
+        <div className='w-full h-full '>
           <Navbar/>
           <HeroSection/>
           <IconBar/>

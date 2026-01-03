@@ -14,12 +14,13 @@ import bitcoin from "../public/bitcoin.svg"
 import { Button } from "./ui/button"
 import send from "../public/send.svg"
 import document from "../public/document.svg"
+import avatar from "../public/Avatar.png"
 
 const HeroSection = () => {
   return (
     <div className= 'h-fit w-full mt-20 '>
-        <div className=''> 
-            <Image className='w-20' src={Profile} alt="profile"></Image>
+        <div className='mb-8'> 
+            <Image className='w-30 rounded' src={avatar} alt="profile"></Image>
         </div> 
         <div>
             <div className='text-3xl tracking-tight font-bold min-h-30 sm:min-h-0'>

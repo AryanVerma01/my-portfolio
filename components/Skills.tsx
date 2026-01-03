@@ -20,24 +20,31 @@ import tailwindcss from '../public/tailwind-css-2.svg'
  
 const Skills = () => {
   return (
-    <div className='w-full h-fit px-4 py-10'>
-        <div className='text-2xl font-bold my-10'>Skills</div>
+    <div className='w-full h-fit py-10 pb-2'>
+        <div className='text-2xl font-bold my-10 mb-6'>Skills</div>
             <div className='flex flex-wrap gap-2'>
+              
+                <div className='w-full text-sm font-medium tracking-tight text-neutral-500'>frontend & Backend</div>
                 <Techblocks src={react}>React</Techblocks>
                 <Techblocks src={nextJS}>NextJS</Techblocks>
                 <Techblocks src={typescript}>Typescript</Techblocks>
+                <Techblocks src={tailwindcss}>TailwindCSS</Techblocks>
                 <Techblocks src={bun}>Bun</Techblocks>
                 <Techblocks src={express}>express</Techblocks>
                 <Techblocks src={postgres}>Postgres</Techblocks>
                 <Techblocks src={mongodb}>MongoDB</Techblocks>
                 <Techblocks src={supabase}>Supabase</Techblocks>
-                <Techblocks src={rust} className='w-20'>Rust</Techblocks>
+                <div className='w-full text-sm font-medium tracking-tight text-neutral-500 mt-4'>Tools & Utilities</div>
                 <Techblocks src="/figma.png" className='w-20'>Figma</Techblocks>
                 <Techblocks src={git}>Git</Techblocks>
                 <Techblocks src={aws}>aws</Techblocks>
                 <Techblocks src={docker}>Docker</Techblocks>
+                <div className='w-full text-sm font-medium tracking-tight text-neutral-500 mt-4'>Web3</div>
+                <Techblocks src={solana}>Solana</Techblocks>
+                <Techblocks src={rust} className='w-20'>Rust</Techblocks>
                 <Techblocks src={solidity}>Solidity</Techblocks>
-                <Techblocks src={ethereum} ></Techblocks>
+                <Techblocks src={ethereum}>Ethereum</Techblocks>
+                <Techblocks src={metamask}>Metamask</Techblocks>
             </div>
     </div>
   )
